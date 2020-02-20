@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+.navbar{
+	/*padding: 0rem 1rem;	*/
+}
+.navbar-brand{
+	padding-top: 0px;
+}
+.navbar .browse{
+	display: inline-block;
+	position: relative;
+}
+.navbar .browse .browse-input{
+	width: 93px;
+	height: 31px;
+	border-radius: 0px;
+	transform: translate(0px,0px);
+	position: absolute;
+	left: 0px;
+}
+.bg-dark{
+	background-color: #5e5e5e !important;
+}
+.card-body{
+	padding: 5px 10px;
+}
+.user-img{
+	width: 35px;
+	height: 35px;
+}
+.table img{
+	width: 60px;
+}
+.files .card{
+	max-width: 150px;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+}
+.files .card p{
+	margin-bottom: 5px;
+}
+.files .card i{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.files .card i:hover{
+	opacity: 1;
+}
+.files .card .card-body{
+	position: relative;
+}
+.avatar{
+	color: #8f8f8f;
+}
+.avatar:hover{
+	text-decoration: none;
+	color: #8f8f8f;
+}
+.navbar .btn{
+	margin-right: 10px;
+}
+.dropdown-menu img{
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	border: solid 1px #e5e5e5;
+	margin-right: 5px;
+	display: inline;
+}
+.profile-links{
+	line-height: 45px;
+}
+
+
+.step {
+  list-style: none;
+  margin: .2rem 0;
+  width: 100%;
+  padding: 0px
+}
+
+.step .step-item {
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  margin-top: 0;
+  min-height: 1rem;
+  position: relative; 
+  text-align: center;
+}
+
+.step .step-item:not(:first-child)::before {
+  background: #0069d9;
+  content: "";
+  height: 2px;
+  left: -50%;
+  position: absolute;
+  top: 9px;
+  width: 100%;
+}
+
+.step .step-item a {
+  color: #212529;
+  display: inline-block;
+  padding: 20px 10px 0;
+  text-decoration: none;
+}
+.step .step-item a i{
+	position: absolute;
+	top: 4px;
+	left: 48%;
+	z-index: 100;
+	color: #fff;
+	font-size: 10px;
+}
+.step .step-item a::before {
+  background: #0069d9;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 25px;
+  left: 50%;
+  position: absolute;
+  top: -3px;
+  transform: translateX(-50%);
+  width: 25px;
+  z-index: 1;
+}
+
+.step .step-item.active a::before {
+  background: #fff;
+  border: 2px solid #0069d9;
+}
+
+.step .step-item.active ~ .step-item::before {
+  background: #c3c3c3;
+}
+
+.step .step-item.active ~ .step-item a::before {
+  background: #c3c3c3;
+}
+select{
+	max-height: 300px;
+}
+
+.irs--round .irs-bar{
+	background-color: #0069d9 !important;
+}
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single{
+	background-color: #0069d9 !important;
+}
+.irs--round .irs-handle{
+	border-color: #0069d9 !important;
+	cursor: pointer !important;
+}
+.irs--round{
+	display: inline-block !important;
+	width: 55%;
+	top:-50px;
+	margin: 0 20px;
+}
+
+.drawings .dropdown-item{
+	padding: 0.25rem 1.0rem;
+}
+
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-circle i {
+  position: relative;
+  top: -1px;
+}
+
+.btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 0.9rem;
+}
+
+.btn-circle-lg {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.3rem;
+}
+.profile-pic{
+	width: 150px;
+	heigtt: 150px;
+	margin: 0 auto;
+	position: relative;
+}
+.profile-pic button{
+	position: absolute;
+	right: 0px;
+	border: solid 2px #ffffff;
+	background-color: #17a2b8;
+	color: #ffffff;
+}
+.nvbar .dropdown-item.active, .dropdown-item:active {
+    color:#212529 !important;
+    text-decoration: none;
+    background:none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .files .card {
+    max-width: 132px;
+  }
+	.profile-links{
+		padding-left: 15px !important;
+	}
+	.irs--round{
+		width: 60%;
+		margin-top: 50px;
+		height: 30px !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.step .step-item a i{
+		left:45%;
+	}
+	.step .step-item a{
+		padding: 20px 0px 0;
+	}
+	.step .step-item{
+		font-size: 13px;
+	}
+	.navbar .browse, .drawings {
+		display: none;
+	}
+	.pricerange label{
+		display: none;
+	}
+	.irs--round{
+		width: 100%;
+		margin: 50px 0 0 0;
+		height: 20px !important;
+	}
+	.range-btns h5{
+		width: 100%;
+		float: left;
+		margin: 10px 0 0 0 !important;
+	}
+}
+@media screen and (max-width: 375px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+	.profile-links{
+		line-height: inherit;
+	}
+}
+.badge{
+	padding: 0.4em 0.6em;
+}
+
+.browse-button
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0px;
+	border: solid 2px #ffffff;
+    background-color: #17a2b8;
+	line-height: 41px;
+	color: #ffffff;
+	top: 0px;
+}
+.browse-input
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+	transform: translate(-3px,-42px);
+    opacity: 0;
+	cursor: pointer;
+}
+
+
+
